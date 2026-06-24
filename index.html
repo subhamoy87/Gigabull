@@ -175,6 +175,11 @@
         .border-top-none {
             border-top: none !important;
         }
+    
+        .error-field {
+            border-color: #ef4444 !important;
+            box-shadow: 0 0 0 1px #ef4444 !important;
+        }
     </style>
 </head>
 
@@ -265,7 +270,7 @@
                         <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Authorized Signatory
                             Signature (Image) *</label>
                         <input type="file" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="s_signature" accept="image/*">
-                        <div><img id="sig_preview" class="sig_preview_box" src="" alt="Signature Preview"></div>
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="sig_preview" class="sig_preview_box"  alt="Signature Preview"></div>
                     </div>
                 </div>
 
@@ -334,7 +339,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 <h4 class="text-[1.05rem] font-bold text-slate-800 border-b border-slate-100 pb-2 mt-8 mb-4">Products
                 </h4>
                 <div class="overflow-x-auto w-full border border-slate-200 rounded-lg shadow-sm">
-                    <table class="table-input" id="product-table">
+                    <table class="table-input w-full" id="product-table">
                     <thead class="bg-indigo-600 text-white">
                         <tr>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Code</th>
@@ -421,7 +426,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Authorized Signatory
                             Signature (Image) *</label>
                         <input type="file" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="ci_signature" accept="image/*">
-                        <div><img id="ci_sig_preview" class="sig_preview_box" src="" alt="Signature Preview"></div>
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="ci_sig_preview" class="sig_preview_box"  alt="Signature Preview"></div>
                     </div>
                 </div>
 
@@ -496,7 +501,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 </div>
 
                 <div class="overflow-x-auto w-full border border-slate-200 rounded-lg shadow-sm">
-                    <table class="table-input" id="ci-product-table">
+                    <table class="table-input w-full" id="ci-product-table">
                     <thead class="bg-indigo-600 text-white">
                         <tr>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Marks &amp; Nos.</th>
@@ -618,7 +623,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Authorized Signatory
                             Signature (Image) *</label>
                         <input type="file" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="pl_signature" accept="image/*">
-                        <div><img id="pl_sig_preview" class="sig_preview_box" src="" alt="Signature Preview"></div>
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="pl_sig_preview" class="sig_preview_box"  alt="Signature Preview"></div>
                     </div>
                 </div>
 
@@ -684,7 +689,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 </div>
 
                 <div class="overflow-x-auto w-full border border-slate-200 rounded-lg shadow-sm">
-                    <table class="table-input" id="pl-product-table">
+                    <table class="table-input w-full" id="pl-product-table">
                     <thead class="bg-indigo-600 text-white">
                         <tr>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Marks &amp; Nos.</th>
@@ -806,6 +811,10 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-6">
                     <div class="flex flex-col"><label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Delivery Name
                             *</label><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="po_d_name" value="Sc Adigherin Srl Company"></div>
+                    <div class="flex flex-col">
+                        <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Email</label>
+                        <input type="email" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="po_d_email" placeholder="example@domain.com">
+                    </div>
                     <div class="flex flex-col"><label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Delivery Contact Person
                             *</label><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="po_d_contact" value="Ilasi Florin"></div>
                     <div class="flex flex-col"><label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Delivery Mobile
@@ -843,9 +852,10 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 <h4 class="text-[1.05rem] font-bold text-slate-800 border-b border-slate-100 pb-2 mt-8 mb-4">Products
                 </h4>
                 <div class="overflow-x-auto w-full border border-slate-200 rounded-lg shadow-sm">
-                    <table class="table-input" id="po-product-table">
+                    <table class="table-input w-full" id="po-product-table">
                     <thead class="bg-indigo-600 text-white">
                         <tr>
+                            <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">SL No</th>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Description *</th>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Quantity *</th>
                             <th class="px-4 py-3 text-sm font-semibold tracking-wide border-b border-indigo-700">Unit Price *</th>
@@ -855,6 +865,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                     </thead>
                     <tbody id="po-product-body">
                         <tr>
+                            <td class="sl-no font-medium text-slate-700 text-center">1</td>
                             <td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm p-2 text-sm rounded po_p_desc" value="Gents Black Cow Nappa Leather Wallet"></td>
                             <td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm p-2 text-sm rounded po_p_qty" value="1300" min="0" oninput="calculateLivePOTotals()"></td>
                             <td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm po_p_price" step="0.01" value="3.5" min="0" oninput="calculateLivePOTotals()"></td>
@@ -890,13 +901,13 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Customer Stamp
                             (Optional)</label>
                         <input type="file" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="po_cust_stamp" accept="image/*">
-                        <div><img id="po_cust_preview" class="sig_preview_box" src="" alt="Customer Stamp"></div>
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="po_cust_preview" class="sig_preview_box"  alt="Customer Stamp"></div>
                     </div>
                     <div class="flex flex-col">
                         <label class="block text-[0.8rem] font-bold uppercase text-slate-500 mb-1">Authorized Signatory
                             Signature (Image) *</label>
                         <input type="file" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm" id="po_signature" accept="image/*">
-                        <div><img id="po_sig_preview" class="sig_preview_box" src="" alt="Vendor Signature"></div>
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" id="po_sig_preview" class="sig_preview_box"  alt="Vendor Signature"></div>
                     </div>
                 </div>
 
@@ -1038,7 +1049,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                     <tr>
                         <td colspan="2" style="vertical-align: bottom; height: 110px; text-align: right; padding: 10px;">
                             <div style="height: 80px; display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px;">
-                                <img class="bind-sig_img" src="" style="max-height: 70px; max-width: 200px; display: none;">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="bind-sig_img"  style="max-height: 70px; max-width: 200px; display: none;">
                             </div>
                             <strong>Authorized Signatory</strong>
                         </td>
@@ -1198,7 +1209,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <td colspan="2" style="vertical-align: bottom; text-align: right; padding: 10px; border-top: 1px solid #999; border-bottom: 1px solid #999; border-left: 1px solid #999 !important;">
                             <div style="display:flex; justify-content: flex-end; align-items: flex-end; height: 100%;">
                                 <div style="text-align: right;">
-                                    <img class="ci-bind-sig_img" src="" style="max-height: 70px; max-width: 200px; display: none; margin: 0 0 5px auto;"><br>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="ci-bind-sig_img"  style="max-height: 70px; max-width: 200px; display: none; margin: 0 0 5px auto;"><br>
                                     <strong>Authorized Signatory</strong>
                                 </div>
                             </div>
@@ -1328,7 +1339,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <td style="vertical-align: bottom; text-align: right; padding: 10px; border-top: none; border-bottom: 1px solid #999; border-left: 1px solid #999 !important; width: 30%;">
                             <div style="display:flex; justify-content: flex-end; align-items: flex-end; height: 100%;">
                                 <div style="text-align: right;">
-                                    <img class="pl-bind-sig_img" src="" style="max-height: 70px; max-width: 200px; display: none; margin: 0 0 5px auto;"><br>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="pl-bind-sig_img"  style="max-height: 70px; max-width: 200px; display: none; margin: 0 0 5px auto;"><br>
                                     <strong>Authorized Signatory</strong>
                                 </div>
                             </div>
@@ -1432,7 +1443,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                                 <strong>Payment Terms</strong><br><span class="po-bind-pay_terms pre-line"></span>
                             </div>
                             <div style="padding: 10px; min-height: 120px; display: flex; justify-content: flex-start; align-items: flex-end;">
-                                <img class="po-bind-cust_stamp" src="" style="max-height: 110px; display: none;">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="po-bind-cust_stamp"  style="max-height: 110px; display: none;">
                             </div>
                         </td>
                         <td style="width: 20%;"><strong>Subtotal (<span class="po-dyn_curr_lbl"></span>)</strong></td>
@@ -1453,7 +1464,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                     <tr>
                         <td colspan="2" style="vertical-align: bottom; height: 110px; text-align: right; padding: 10px;">
                             <div style="height: 80px; display: flex; justify-content: flex-end; align-items: center; margin-bottom: 5px;">
-                                <img class="po-bind-sig_img" src="" style="max-height: 70px; max-width: 200px; display: none;">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" class="po-bind-sig_img"  style="max-height: 70px; max-width: 200px; display: none;">
                             </div>
                             <strong>Authorized Signatory</strong>
                         </td>
@@ -1595,7 +1606,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 const el = document.getElementById(id);
                 if (!el.value.trim()) { el.classList.add('error-field'); isValid = false; }
             }
-            if (!isValid) return;
+            if (!isValid) { alert('Validation Error: Please fill all required fields highlighted in red.'); return; }
             generatePDF();
         }
 
@@ -1695,7 +1706,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 margin: [0, 0, 0, 0],
                 filename: `Proforma_Invoice_${document.getElementById('inv_number').value}.pdf`,
                 image: { type: 'jpeg', quality: 1.0 },
-                html2canvas: { scale: 4, useCORS: true, letterRendering: true, dpi: 300 },
+                html2canvas: { scale: 4, useCORS: false, letterRendering: true, dpi: 300 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
@@ -1897,7 +1908,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 margin: [0, 0, 0, 0],
                 filename: `Export_Invoice_${document.getElementById('ci_inv_number').value}.pdf`,
                 image: { type: 'jpeg', quality: 1.0 },
-                html2canvas: { scale: 4, useCORS: true, letterRendering: true, dpi: 300 },
+                html2canvas: { scale: 4, useCORS: false, letterRendering: true, dpi: 300 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
@@ -2093,7 +2104,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 margin: [0, 0, 0, 0],
                 filename: `Packing_List_${document.getElementById('pl_inv_number').value}.pdf`,
                 image: { type: 'jpeg', quality: 1.0 },
-                html2canvas: { scale: 4, useCORS: true, letterRendering: true, dpi: 300 },
+                html2canvas: { scale: 4, useCORS: false, letterRendering: true, dpi: 300 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
@@ -2192,7 +2203,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 alert('Validation Error: Delivery Date must be greater than P.O. Date.');
             } else { delDateElement.classList.remove('error-field'); }
 
-            if (!isValid) return;
+            if (!isValid) { alert('Validation Error: Please fill all required fields highlighted in red.'); return; }
             generatePO_PDF();
         }
 
@@ -2302,7 +2313,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                 margin: [0, 0, 0, 0],
                 filename: `Purchase_Order_${document.getElementById('po_number').value}.pdf`,
                 image: { type: 'jpeg', quality: 1.0 },
-                html2canvas: { scale: 4, useCORS: true, letterRendering: true, dpi: 300 },
+                html2canvas: { scale: 4, useCORS: false, letterRendering: true, dpi: 300 },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
 
@@ -2323,7 +2334,7 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
             } else if (type === 'pl') {
                 row.innerHTML = `<td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" step="0.01" class="w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" step="0.01" class="w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><button class="btn-remove bg-rose-50 hover:bg-rose-500 text-rose-600 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-colors border border-rose-200 hover:border-rose-500" onclick="removeRow(this, 'pl')">X</button></td>`;
             } else if (type === 'purchase') {
-                row.innerHTML = `<td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" step="0.01" value="0" min="0"></td><td><strong class="po-row-total">0.00</strong></td><td><button class="btn-remove bg-rose-50 hover:bg-rose-500 text-rose-600 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-colors border border-rose-200 hover:border-rose-500" onclick="removeRow(this, 'purchase')">X</button></td>`;
+                row.innerHTML = `<td class="sl-no font-medium text-slate-700 text-center"></td><td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" step="0.01" value="0" min="0"></td><td><strong class="po-row-total">0.00</strong></td><td><button class="btn-remove bg-rose-50 hover:bg-rose-500 text-rose-600 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-colors border border-rose-200 hover:border-rose-500" onclick="removeRow(this, 'purchase')">X</button></td>`;
             } else {
                 row.innerHTML = `<td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="text" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value=""></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" value="0" min="0"></td><td><input type="number" class="w-full p-3 border border-slate-200 rounded-md focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-[0.95rem] text-slate-700 placeholder-slate-400 bg-slate-50 hover:bg-white transition-colors shadow-sm w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors w-full p-2 text-sm border border-slate-200 rounded focus:border-indigo-500 outline-none placeholder-slate-400 focus:ring-1 focus:ring-indigo-500 shadow-sm transition-colors" step="0.01" value="0" min="0"></td><td><strong class="row-total">0.00</strong></td><td><button class="btn-remove bg-rose-50 hover:bg-rose-500 text-rose-600 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-colors border border-rose-200 hover:border-rose-500" onclick="removeRow(this, 'proforma')">X</button></td>`;
             }
@@ -2360,9 +2371,23 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                     inputs[1].classList.add('po_p_qty'); inputs[1].setAttribute('oninput', 'calculateLivePOTotals()');
                     inputs[2].classList.add('po_p_price'); inputs[2].setAttribute('oninput', 'calculateLivePOTotals()');
                 }
-            }
+            
+                const tbody = row.closest('tbody');
+                const rows = tbody.querySelectorAll('tr');
+                rows.forEach((r, i) => {
+                    const slTd = r.querySelector('.sl-no');
+                    if (slTd) slTd.textContent = i + 1;
+                });
+    }
             
             type === 'purchase' ? calculateLivePOTotals() : type === 'ci' ? calculateLiveCITotals() : type === 'pl' ? calculateLivePLTotals() : calculateLiveTotals();
+            if (type === 'purchase') {
+                const rows = tbody.querySelectorAll('tr');
+                rows.forEach((r, i) => {
+                    const slTd = r.querySelector('.sl-no');
+                    if (slTd) slTd.textContent = i + 1;
+                });
+            }
         }
 
         function removeRow(btn, type) {
