@@ -60,7 +60,7 @@
             background: white;
             color: black;
             font-family: Arial, sans-serif;
-            font-size: 12px;
+            font-size: 11px;
             width: 210mm;
             height: 296mm;
             /* Symmetrical margins on left and right (10mm) */
@@ -145,16 +145,6 @@
             border-right: 1px solid #999 !important;
         }
 
-        .bind-item_body td:first-child,
-        .po-bind-item_body td:first-child {
-            border-left: 1px solid #999 !important;
-        }
-
-        .bind-item_body td:last-child,
-        .po-bind-item_body td:last-child {
-            border-right: 1px solid #999 !important;
-        }
-
         /* For Commercial Invoice & Packing List: remove BOTH horizontal and vertical internally */
         .ci-bind-item_body td,
         .pl-bind-item_body td,
@@ -173,6 +163,17 @@
         .pl-bind-footer_rows td:last-child {
             border-right: 1px solid #999 !important;
         }
+
+        .bind-item_body td:first-child,
+        .po-bind-item_body td:first-child {
+            border-left: 1px solid #999 !important;
+        }
+
+        .bind-item_body td:last-child,
+        .po-bind-item_body td:last-child {
+            border-right: 1px solid #999 !important;
+        }
+
 
         .pdf-center {
             text-align: center;
@@ -1644,10 +1645,10 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <tr style="background-color: #fcfcfc;">
                             <th class="pdf-center" style="width: 12%;">Product Code</th>
                             <th class="pdf-center" style="width: 48%;">Description</th>
-                            <th class="pdf-center" style="width: 10%; font-size: 11px;">Quantity (Pcs)</th>
-                            <th class="pdf-center" style="width: 15%; font-size: 11px;">Unit Price<br>(<span
+                            <th class="pdf-center" style="width: 10%;">Quantity (Pcs)</th>
+                            <th class="pdf-center" style="width: 15%;">Unit Price<br>(<span
                                     class="dyn_curr_lbl"></span>)</th>
-                            <th class="pdf-center" style="width: 15%; font-size: 11px;">Total Amount<br>(<span
+                            <th class="pdf-center" style="width: 15%;">Total Amount<br>(<span
                                     class="dyn_curr_lbl"></span>)</th>
                         </tr>
                     </thead>
@@ -2132,10 +2133,10 @@ Ground First Floor, Metropolitan Kolkata - 700105</textarea></div>
                         <tr style="background-color: #fcfcfc;">
                             <th class="pdf-center" style="width: 8%;">Sl. No</th>
                             <th class="pdf-center" style="width: 52%;">Description</th>
-                            <th class="pdf-center" style="width: 10%; font-size: 11px;">Quantity (Pcs)</th>
-                            <th class="pdf-center" style="width: 15%; font-size: 11px;">Unit Price<br>(<span
+                            <th class="pdf-center" style="width: 10%;">Quantity (Pcs)</th>
+                            <th class="pdf-center" style="width: 15%;">Unit Price<br>(<span
                                     class="po-dyn_curr_lbl"></span>)</th>
-                            <th class="pdf-center" style="width: 15%; font-size: 11px;">Amount<br>(<span
+                            <th class="pdf-center" style="width: 15%;">Amount<br>(<span
                                     class="po-dyn_curr_lbl"></span>)</th>
                         </tr>
                     </thead>
